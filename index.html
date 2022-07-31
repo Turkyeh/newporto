@@ -1,0 +1,639 @@
+<<<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description"
+            content="This is an initial project in html, css, bootstrap and a bit of sass. The project is a personal portofolio that contains information about me.">
+        <link href="css/index.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+            crossorigin="anonymous">
+
+        <!--cdn content delivary network -->
+
+        <style>
+            ul {
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                justify-content: flex-start;
+
+            }
+
+            li {
+                justify-content: flex-start;
+                padding-top: 20px;
+
+
+            }
+
+            .Tu2 {
+
+                width: 10px;
+
+
+            }
+
+            .Tu5 {
+                display: flex;
+                flex-direction: column;
+                flex-flow: column;
+
+
+            }
+
+            .tu5 label {
+                justify-content: left;
+
+
+            }
+
+            .A1 {
+
+                width: 200px;
+                margin-right: 100px;
+                ;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+
+            @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+            html,
+            body {
+                height: 100%;
+                font-weight: 800;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background: #fbfbfb;
+                font-family: Arial;
+            }
+
+            .container {
+                display: flex;
+                /*   border:1px solid red; */
+                height: 100%;
+                align-items: center;
+            }
+
+            svg {
+                display: block;
+                font: 10.5em 'Montserrat';
+                width: 960px;
+                height: 300px;
+                margin: 0 auto;
+            }
+
+            .text-copy {
+                fill: none;
+                stroke: white;
+                stroke-dasharray: 6% 29%;
+                stroke-width: 5px;
+                stroke-dashoffset: 0%;
+                animation: stroke-offset 5.5s infinite linear;
+            }
+
+            .text-copy:nth-child(1) {
+                stroke: hsl(317, 83%, 47%);
+                animation-delay: -1;
+            }
+
+            .text-copy:nth-child(2) {
+                stroke: #ff0e73;
+                animation-delay: -2s;
+            }
+
+            .text-copy:nth-child(3) {
+                stroke: #ccff3f;
+                animation-delay: -3s;
+            }
+
+            .text-copy:nth-child(4) {
+                stroke: #1400ee;
+                animation-delay: -4s;
+            }
+
+            .text-copy:nth-child(5) {
+                stroke: #ff1818;
+                animation-delay: -5s;
+            }
+
+            @keyframes stroke-offset {
+                100% {
+                    stroke-dashoffset: -35%;
+                }
+            }
+
+            section {
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                width: 100%;
+
+
+            }
+
+            section div {
+                justify-content: center;
+
+                justify-content: space-between;
+                justify-content: center;
+                text-align: center;
+                float: inherit;
+
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-dark bg-dark fixed-top" style="padding:0px; margin:0px">
+            <div class="container-fluid"
+                style="background-color:#000000  ;border: #960000 solid 4PX; pad: 0; margin: 0;">
+                <a class="navbar-brand" href="#" class="Tu1">Welcome, I hope you are well</a>
+                <ul class="" style="">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">education</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Discovery
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="" href="#" style="padding-left:8%;">Contact </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sitting</a>
+                    </li>
+
+
+
+
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="" type="submit" style="background-color: #960000 ;  ">Search</button>
+                </form>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel" style="width:40%;">
+                    <div class="offcanvas-header">
+
+
+
+                    </div>
+
+
+
+                    <div class="offcanvas-body">
+                        <div class="fa-3x">
+                            <i class="fa-solid fa-triangle-exclamation fa-fade"></i>
+                            <i class="fa-solid fa-skull-crossbones fa-fade"></i>
+                            <i class="fa-solid fa-desktop-arrow-down fa-fade"></i>
+                            <i class="fa-solid fa-i-cursor fa-fade"
+                                style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </div>
+
+
+                        <form>
+                            <div class="Tu3" style="text-align: center;" style="width:100%">
+                                </style>>
+
+
+                                <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
+                                    dy=".3em"><img src="image/0f1b02f4-e4dc-40b7-9b5d-d8f99eb23789-modified (2).png"
+                                        alt="" width="25%">
+                                </text>
+                                </svg>
+
+                                <h2>Turkyeh yousef</h2>
+                                <h6>Full stack developer</h6>
+
+
+                            </div>
+
+
+                        </form>
+                    </div>
+
+                    <form id="Tu5">
+                        <br><br>
+
+                        <label for="Tu4">Name:</label>Turkyeh yousef mohammed abu kharmh
+                        <br>
+                        <label for="Tu4">Email:</label><a href="mailto:Turkyeh.yousef@gmail.com ">
+                            Turkyeh.yousef@gmail.com</a>
+                        <br>
+                        <label for="Tu4">phone:</label><a href=tel:"+962778083578">+962778083578</a>
+                        <br>
+                        <label for="Tu4">Country:</label>Jordan
+                        <br>
+                        <label for="Tu4">Detailed address:</label>Al-Zarqa Al-Jundi neighborhood
+                        <br>
+
+
+
+
+
+
+
+                    </form>
+                    <br><br><br>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary" type="button" style="color:azure; background-color: #d80b0b;">
+                            <a href="https://github.com/Turkyeh"> connect
+                                with github</a> </button>
+                        <button class="btn btn-primary" type="button" style="color:azure; background-color:  #d80b0b;">
+                            <ahref="www.facebook.com "> connect
+                            with facebook</a>
+                    </button>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+        </div>
+    </nav><!---->
+  
+    
+        <header style=" background-image: url(image/Screenshot\ 2022-07-31\ 022308.png ) ;background-size: cover;
+                                padding-top: 0px; margin-top: 50px; margin-left: 280px;">
+                                <div class=" container" style="margin-left: 0px; float: left ;">
+
+                                    <p
+                                        style="font-size:300px  ; margin: 0; position: absolute; left:0px; bottom:0px; top:0px;">
+                                        IM
+                                    </p>
+
+
+
+
+
+                                </div>
+
+
+                                <Br> <br><br><br><br>
+                                <<Br> <br><br><br><br><Br> <br><br><br><br><Br> <br><br><br><br><br><br><br><br><br><br>
+
+                                    </header>
+
+                                    <svg viewBox="0 0 960 300" style="position:absolute ; left:22px;  top:55%; ">
+                                        <symbol id="s-text">
+                                            <text text-anchor="middle" x="40%" y="70%">a programmer</text>
+                                        </symbol>
+
+                                        <g class="g-ants">
+                                            <use xlink:href="#s-text" class="text-copy"></use>
+                                            <use xlink:href="#s-text" class="text-copy"></use>
+                                            <use xlink:href="#s-text" class="text-copy"></use>
+                                            <use xlink:href="#s-text" class="text-copy"></use>
+                                            <use xlink:href="#s-text" class="text-copy"></use>
+                                        </g>
+                                    </svg>
+
+
+                                    <br>
+                                    <hr>
+                                    <h1>WhO Am i ?</h1>
+                                    <section>
+
+
+
+
+
+                                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                                            <div class=" col">
+                                                <div class="card">
+                                                    <br>
+
+
+                                                    <img src="image/pro1.jpg" width="100%" height="210">
+
+
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"></h5>
+                                                        <p class="card-text">I am a project for a successful programmer
+                                                            one
+                                                            day. I am striving to gain experiences that are compatible
+                                                            with
+                                                            my
+                                                            abilities, and my most ambition today is to be able to
+                                                            achieve
+                                                            an achievement of which I am proud..</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                                <div class=" col">
+                                                    <div class="card">
+
+
+
+                                                        <img src="image/pro2.jpg" alt="" width="500px" height="210px">
+
+
+
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">as a humen</h5>
+                                                            <p class="card-text">A project for a human being who is also
+                                                                able to give from the heart and do good as much as
+                                                                possible.
+                                                                <br><br>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </section>
+
+
+                                    <br><br><br>
+
+                                    <h1>Certifications and experience</h1>
+                                    <br><br>
+                                    <aside>
+
+                                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="image/T1.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">ToT</h5>
+                                                        <h5>Talal abu gazaleh organization </h5>
+                                                        <p class="card-text">The TOT course targets trainers who are new
+                                                            to
+                                                            their field, who want to work internationally and with
+                                                            higher
+                                                            professionalism, and focus on all areas of the Trainer
+                                                            Competency Model (ETS).
+
+                                                            The main objective of the course is to train trainers who
+                                                            are
+                                                            motivated to participate in the continuous improvement of
+                                                            the quality of projects..</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="image/tu2.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">ُExcel </h5>
+                                                        <h5>ahu university</h5>
+                                                        <p class="card-text">Excel is one of the most important programs
+                                                            used by departments, financial departments, human resources,
+                                                            production,
+                                                            purchasing, sales, marketing and IT management. Excel
+                                                            enables
+                                                            you to use many features that facilitate your daily work,
+                                                            and arrange financial and administrative matters better and
+                                                            easier to access.
+
+                                                            .</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="image/tu4.png" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">ICDL</h5>
+                                                        <h5>ahu university</h5>
+                                                        <p class="card-text">Basic skills and concepts related to
+                                                            information and communication technology, computers, tools
+                                                            and
+                                                            software are taught
+                                                            Basic concepts of effective file management and organization
+                                                            Basic skills necessary to understand the key principles
+                                                            related
+                                                            to web browsing, online security, and effective use of
+                                                            the internet.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="image/tu3.png" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">web front end </h5>
+                                                        <h5>EFe compane</h5>
+                                                        <p class="card-text">Learn the basics of programming web pages
+                                                            how
+                                                            to apply to HTML + CSS after learning to develop your level
+                                                            in
+                                                            languages
+                                                            and all you need from tips, articles, sites and complete
+                                                            practical training with its code.
+                                                            <br><br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                    </div>
+
+
+
+                    </aside>
+
+                    <br><br><br>
+
+
+
+
+                    <!---
+
+                                <br>
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="image/0f1b02f4-e4dc-40b7-9b5d-d8f99eb23789-modified (2).png"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="image/0f1b02f4-e4dc-40b7-9b5d-d8f99eb23789.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="image/72d29683-ecb1-4b45-a63a-df78e8474c39.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+                                <br><br><br>
+
+                                <script
+                                    src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                                    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                                    crossorigin="anonymous">
+                                    </script>
+
+                                -->
+
+
+
+                    <h1>
+
+                        my reference
+                    </h1>
+                    <br><br>
+                    <article>
+
+                        <div class="container marketing">
+
+                            <!-- Three columns of text below the carousel -->
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="image/qnQ2qxfhbP-modified.png" alt="" width="100px" height="100px">
+
+                                    <h2>Dr. Ali Al-Ghanmayin</h2>
+                                    <p>Dr. Ali M. Al-Ghonmein is an assistant Professor in department of Computer
+                                        Information Systems at Al-Hussein Bin Talal
+                                        University.
+                                        interests lie in the area of E-learning, Information Retrievals, Decision
+                                        support
+                                        systems, Natural language processing,
+                                        Database systems, Big Data and Internet of Things.</p>
+                                    <p><a class="btn btn-secondary" href="mailto:ali.m.alghonmein@ahu.edu.jo">contact
+                                            &raquo;</a></p>
+                                </div><!-- /.col-lg-4 -->
+                                <div class="col-lg-4">
+                                    <img src="image/df1d2638-e607-45ec-9ae9-649a5955b532123[1]-modified.png" alt=""
+                                        width="100px" height="100px">
+
+                                    <h2>Dr. Hamed Talhouni</h2>
+                                    <p>Lecturer at Al Hussien Bin Talal University
+
+                                        Bachelor in Computer Science from Al-Hussein Bin Talal University in 2004
+
+                                        Master's Degree in Computer Information System (CIS) from the Arab Academy for
+                                        Banking and Financial Sciences (AABFS) in
+                                        Jordan, 2008.</p>
+                                    <p><a class="btn btn-secondary" href="mailto:hamed.a.talhouni@ahu.edu.jo">contact
+                                            &raquo;</a></p>
+                                </div><!-- /.col-lg-4 -->
+                                <div class="col-lg-4">
+                                    <img src="image/23f6457e-6774-4b2b-a675-65c965d18bf6123[1]-modified.png" alt=""
+                                        width="100px" height="100px">
+
+                                    <h2>Dr. Saleh Al-Atewi</h2>
+                                    <p>Doctor, Head of the Deanship of Scientific Research and Higher Education, and
+                                        Dean of
+                                        the College of Information
+                                        Technology, Department of Computer Science, Al-Hussein Bin Talal University.</p>
+                                    <p><a class="btn btn-secondary" href="mailto:saleh@ahu.edu.jo">Contact &raquo;</a>
+                                    </p>
+                                </div><!-- /.col-lg-4 -->
+                            </div><!-- /.row -->
+
+
+
+                        </div>
+
+
+
+
+                    </article>
+
+                    <div
+                        style="background-color:white ; background-image:url(image/images.jpg);background-repeat: no-repeat; background-size: cover;  ">
+                        <div class="container">
+                            <form action="action_page.php">
+
+
+
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                <br>
+
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                <br>
+                                <label for="country">Country</label>
+                                <select id="country" name="country">
+                                    <option value="jordan">jordan</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="usa">USA</option>
+                                </select>
+
+                                <label for="subject">Subject</label>
+                                <textarea id="subject" name="subject" placeholder="Write something.."
+                                    style="height:200px"></textarea>
+
+                                <input type="submit" value="Submit">
+
+                            </form>
+                        </div>
+                    </div>
+                    <br>
+                    <footer>
+                        <center>
+                            <p> &Copf; copy by Turkyeh yousef </p>
+                        </center>
+
+                    </footer>
+
+    </body>
+
+    </html>>>
